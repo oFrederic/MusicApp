@@ -15,8 +15,41 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button playLists = (Button) findViewById(R.id.playlist_button);
+        Button play = (Button) findViewById(R.id.play_button);
+        Button previous = (Button) findViewById(R.id.previous_button);
+        Button next = (Button) findViewById(R.id.next_button);
         Button pause = (Button) findViewById(R.id.pause_button);
+        Button playLists = (Button) findViewById(R.id.playlist_button);
+        Button option = (Button) findViewById(R.id.option_button);
+
+
+        play.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Toast toast = Toast.makeText(getApplicationContext(), "The song is now playing", Toast.LENGTH_SHORT);
+                toast.show();
+            }
+        });
+
+        previous.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Toast toast = Toast.makeText(getApplicationContext(), "The previous song is now selected", Toast.LENGTH_SHORT);
+                toast.show();
+            }
+        });
+
+        next.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Toast toast = Toast.makeText(getApplicationContext(), "The next song is now selected", Toast.LENGTH_SHORT);
+                toast.show();
+            }
+        });
+
+        pause.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Toast toast = Toast.makeText(getApplicationContext(), "The song is on pause", Toast.LENGTH_SHORT);
+                toast.show();
+            }
+        });
 
         playLists.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -25,9 +58,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        pause.setOnClickListener(new View.OnClickListener() {
+        option.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast toast = Toast.makeText(getApplicationContext(), "The song is on pause", Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(getApplicationContext(), "No option at the moment", Toast.LENGTH_SHORT);
                 toast.show();
             }
         });
