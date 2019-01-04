@@ -27,7 +27,7 @@ public class PlaylistActivity extends AppCompatActivity {
         songs.add(new Song("Wild Thing", "Tone-Loc"));
         songs.add(new Song("Do Your Thing", "Basement Jaxx"));
         songs.add(new Song("Rapper's Delight - Single Version", "The Sugarhill Gang"));
-        songs.add(new Song("A Fifth Of Beethoven - 2007 Remastered Version Saturday Night Fever", "Walter Murphy"));
+        songs.add(new Song("A Fifth Of Beethoven -  Saturday Night Fever", "Walter Murphy"));
         songs.add(new Song("The Christmas Song", "James Brown"));
         songs.add(new Song("I've Got A Woman", "Ray Charles"));
         songs.add(new Song("I Know You Got Soul - The Double Trouble Remix", "Eric B. & Rakim, Norman Cook"));
